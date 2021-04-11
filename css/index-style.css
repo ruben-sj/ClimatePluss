@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Bulo";
+    src: url("font-family/Bulo/Bulo\ Hair\ Dark.otf");
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    font-family: "Bulo";
+    font-size: 1.7em;
+}
+
+.tekst{
+    width: 50vw;
+    margin-bottom: 30px;
+}
+
+
+.section2 .finnes{
+    transform: skewY(0deg);
+    -webkit-transform: skewY(0deg);
+} 
+.buttonStyle{
+    border: none;
+    border-radius: 5px;
+    background-color: #357376;
+    height: 60px;
+    width: 120px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: "Bulo";
+    font-weight: 1000;
+    font-size: 20px;
+    box-shadow: 3px 3px 5px 0 grey;
+    cursor: pointer;
+}
+.buttonStyle:hover{
+    background-color: #1d4d4f;
+    transition: 0.4s;
+}
+.nav-googlePlay, .nav-appStore{
+    height: 50px;
+}
+
+.tekst p, .tekst a{
+    color: #4b4b4b;
+    font-weight: 1000;
+}
+
+.tekst h1{
+    color: #357376;
+}
+
+.finnes{
+    display:none;
+}
+
+.section1{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.jordklode img{
+    width: 30vw;
+}
+
+.section2{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center; 
+    
+    background-color: #e5dfdf;
+    
+
+    transform: skewY(3deg);
+    -webkit-transform: skewY(3deg);
+}
+
+.section2 img{
+    margin-top: 20px;
+
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+}
+
+
+.section2 .tekst{
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+}
+
+.fabrikk img{
+    width: 30vw;
+}
+
+
+.section3{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.folk img{
+    width: 30vw;
+}
+
+@media only screen and (max-width:813px){
+    .section1{
+        flex-direction: column;
+        height: 95vh;
+        text-align: center;
+    }
+    .section2{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+
+    .section3{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .tekst{
+        width: 80vw;
+        font-size: 20px;
+
+    }
+
+    .jordklode, .folk, .fabrikk{
+        display: none;
+    }
+
+    .finnes{
+        display: unset;
+        height: 25vw;
+    }
+    
+}
+
+.trekant {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    max-height: 20vw;
+    left: 0;
+    top: -40px;
+    vertical-align: top;
+}
+.trekant1 {
+    width: 100%;
+    position: absolute;
+    height: 40px;
+    max-height: 20vw;
+    top: -30px;
+    left: 0;
+    vertical-align: top;
+}
+
+@media only screen and (max-width:400px){
+    .tekst{
+        font-size: 18px;
+    }
+}

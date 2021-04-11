@@ -1,0 +1,106 @@
+body{
+    overflow-x: hidden;
+
+}
+footer{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1d4d4f;
+    z-index: 5;
+}
+
+.footer-container{
+    position: relative;
+    width: 76%;
+    left: 12%;
+    bottom: 0;
+    margin-top: 0;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-stretch: unset;
+}
+
+.footer-container .googlePlay, .footer-container .appStore{
+    width: 150px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-left, .footer-center, .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-right,.footer-left{
+    width: 25%;
+}
+.footer-center{
+    width: 45%;
+}
+.footer-left ul, .footer-center ul, .footer-right ul{
+    padding-inline-start: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.footer-container .footer-links{
+    color:  #FFFFFF;
+    margin: 20px 0 15px;
+    padding: 0;
+}
+.footer-container .footer-links a{
+    display: block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+}
+.footer-links a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.topLink-Footer{
+    color: lightgray;
+    font-size: 19px;
+}
+.footer-copyRight p {
+    border-bottom: solid 2px #FFFFFF;
+    border-top: solid 2px #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+footer .sideTriangleRight{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 5vh;
+}
+footer .sideTriangleLeft{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 5vh;
+}
+
+@media only screen and (max-width: 880px) {
+    .footer-container{
+        padding-left: 0;
+    }
+    .footer-left, .footer-center, .footer-right{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-center{
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}

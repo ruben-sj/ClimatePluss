@@ -1,0 +1,123 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.ourTeam{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 8vw;
+    width: 90vw;
+    top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.ourTeam img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+
+}
+.study{
+    color: gray;
+    font-size: 17px;
+}
+.member1,.member2,.member3,.member4,.member5,.member6 {
+    transition: box-shadow .3s;
+    border: 1px solid #ccc;
+
+    width: 20vw;
+    max-width: 20vw;
+    text-align: center;
+    margin: 4vw 4vw;
+}
+.member1:hover,.member2:hover,.member3:hover,.member4:hover,.member5:hover,.member6:hover{
+    box-shadow: 0 0 11px rgba(43,43,43,.4);
+}
+
+
+.ourTeam h2{
+    font-size: 20px;
+}
+.btnContact{
+    position: relative;
+    width: 100%;
+    background-color: #1d4d4f;
+    color: #FFFFFF;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.btnContact:hover{
+    background-color: #e5dfdf;
+    color: #1d4d4f;
+}
+.school{
+    padding-bottom: 20px;
+}
+.ourTeam p{
+    margin: 0;
+}
+.ourTeam a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.btnContact a:visited{
+    text-decoration: none;
+}
+.trekant {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    max-height: 20vw;
+    left: 0;
+    top: -40px;
+    vertical-align: top;
+}
+.trekant1 {
+    width: 100%;
+    position: absolute;
+    height: 40px;
+    max-height: 20vw;
+    top: -30px;
+    left: 0;
+    vertical-align: top;
+}
+
+@media only screen and (max-width: 650px) {
+    .ourTeam{
+        width: 98vw;
+        left: 2vw;
+    }
+
+    .btnContact:hover{
+        background-color: #1d4d4f;
+        color: #FFFFFF;
+    }
+
+    .member1,.member2,.member3,.member4,.member5,.member6{
+        width: 40vw;
+        max-width: 40vw;
+        margin: 5vw 4vw;
+
+    }
+}
+@media only screen and (max-width: 550px) {
+    .ourTeam{
+        top: 12%;
+        margin-bottom: 30%;
+    }
+
+    .ourTeam h2{
+        font-size: 16px;
+    }
+    .btnContact p{
+        font-size: 16px;
+    }
+}

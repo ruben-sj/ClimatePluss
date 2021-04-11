@@ -1,0 +1,241 @@
+@keyframes toText{
+    from{
+        transform: translateY(0px) rotate(180deg);
+    }
+    to{
+        transform: translateY(25px) rotate(180deg);
+    }
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.content{
+    flex: 4;
+    margin-right: 8%;
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+}
+.content h1{
+    text-align: center;
+    position: relative;
+    right: 12%;
+    font-size: 50px;
+    color: #357376;
+}
+.content h2{
+    font-size: 32px;
+    color: #357376;
+}
+.content p{
+    font-size: 22px;
+    letter-spacing: 0.75px;
+    filter: contrast(200%);
+    line-height: 40px;
+    line-height: 50px;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-stroke: 0.45px;
+}
+
+
+.links a{  
+    color: black;
+}
+.links a:hover{
+    color: #da4302;
+}
+.sidebar{
+    flex: 1;
+    position: sticky;
+    position: -webkit-sticky;  /*for safari*/
+    top: 190px;
+    height: 8%;
+    margin-top: 8%;
+    margin-left: 8%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+    border-right: 0.75px solid black;
+    
+}
+
+.sidebar a, .sidebarMob a{
+    font-size: 24px;
+    padding: 0;
+    text-decoration: none;
+    color: #357376;
+}
+.sidebar a:hover, .sidebarMob a:hover{   
+    color: #da4302;
+}
+.sidebarMob{
+    font-size: 22px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    display: none;
+}
+.sidebarMob a{
+    margin: 5px;
+}
+.probPicture{
+    position: relative;
+    padding-top: 47px;
+    width: 100%;
+    height: 44vw;
+}
+.probPicture a:visited, .probPicture a{
+    text-decoration: none;
+    color: black;
+}
+#probImg, #mobProbImg{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    filter: brightness(0.5);
+
+}
+#mobProbImg{
+    display: none;
+}
+#iframe{
+    width: 40vw;
+    height: 25vw;
+    align-self: center;
+}
+.mainHeader{
+    /* font-family: Tahoma, Geneva, sans-serif; */
+    position: relative;
+    margin-top: -32%;
+    margin-left: 35%;
+    font-size: 10vw;
+    color: white;
+}
+.content a:focus,.sidebar a:focus, h1:focus, h2:focus, p:focus{
+    outline-color: black;
+}
+.toText{
+    font-size: 2.6vw;
+    width: 4.4vw;
+    text-align: center;
+    position: relative;
+    transform: rotate(180deg);
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.targetArea{
+    position: absolute;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    left: 50%;
+    width: 15vw;
+    height: 15vh;
+}
+
+.targetArea:hover .toText{
+    animation-name: toText;
+    animation-duration: 500ms;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.buttonStyle{
+    border: none;
+    border-radius: 5px;
+    background-color: #357376;
+    height: 60px;
+    width: 120px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: "Bulo";
+    font-weight: bolder;
+    font-size: 20px;
+    box-shadow: 3px 3px 5px 0 grey;
+    cursor: pointer;
+}
+.buttonStyle:hover{
+    background-color: #1d4d4f;
+    transition: 0.4s;
+}
+#header1, #header2, #header3, #header4{
+    position: relative;
+    bottom: 65px;
+    content: " ";
+}
+
+
+@media only screen and (max-width: 860px){
+    .sidebar{
+        display: none;
+    }
+    .sidebarMob, .sidebarMob a{
+        display: flex;
+    }
+    .content{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .content h1{
+        left: 0;
+    }
+
+    .targetArea:hover .toText{
+        animation: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    .content p{
+        font-size: 22px;
+    }
+    .sidebarMob a{
+        width: 100%;
+    } 
+    .mainHeader{
+        font-size: 14vw;
+        margin-left: 28%;
+        margin-top: -55%;
+    }
+    .toText{
+        width: 10vw;
+    }
+    #iframe{
+        width: 80vw;
+        height: 65vw;
+    }
+    #mobProbImg{
+        display: block;
+    }
+    #probImg{
+        display: none;
+    }
+    .probPicture{
+        height: 88vw;
+    }
+}
+
+.trekant {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    max-height: 20vw;
+    left: 0;
+    top: -40px;
+    vertical-align: top;
+}
+.trekant1 {
+    width: 100%;
+    position: absolute;
+    height: 40px;
+    max-height: 20vw;
+    top: -30px;
+    left: 0;
+    vertical-align: top;
+}
